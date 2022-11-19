@@ -1,0 +1,28 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<img src="/profile.png"/>
+  Stationarystation // {today.getFullYear()}
+  <br/>
+  <a href="https://mastodon.social/@stationarystation">Mastodon</a>
+  <a href="https://miruku.cafe/@stationarystation">Miruku</a>
+  <a href="https://github.com/stationarystation">Github</a>
+  <a href="https://github.com/stationarystation/blog">Source Code</a>
+</footer>
+<style>
+	footer {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+		padding: 25px;
+		text-align: center;
+	}
+  footer img {
+    width: 24px;
+    height: auto;
+    background-size: cover;
+    border-radius: 50px;
+  }
+</style>

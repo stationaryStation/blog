@@ -1,0 +1,46 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+      <img width={720} height={360} src={"/placeholder-social.jpg"} alt="" />
+			<h1>Hey! Welcome to my <span class="very_cool_animation">blog</span> :D</h1>
+			<p>
+			  Welcome to my personal blog where I talk about stuff. I really can't tell you exactly what
+        I will talk about on this website but it's going to be mostly development related stuff and
+        maybe a <italic>slight</italic> glimpse of my life.
+			</p>
+      <p>
+        To learn more about me and what I do, go to the <a href="./about">"About Me"</a> page.
+      </p>
+		</main>
+		<Footer />
+	</body>
+  <style>
+    @keyframes scroll_gradient {
+      to {
+        background-position: 200%; 
+      }
+    }
+    .very_cool_animation {
+      background: rgb(125,177,255);
+      background: linear-gradient(63deg, rgba(125,177,255,1) 0%, rgba(204,0,255,1) 25%, rgba(255,0,212,1) 50%, rgba(204,0,255,1) 75%, rgba(125,177,255,1) 100%); 
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      animation: scroll_gradient 10s ease-in-out infinite alternate;
+    }
+  </style> 
+</html>
