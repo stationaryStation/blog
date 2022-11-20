@@ -3,7 +3,8 @@ layout: "../../layouts/BlogPost.astro"
 title: "Getting Started with Astro"
 description: "Station talks about the new blog and why he choosed astro"
 pubDate: "November 18 2022"
-updatedDate: "November 18 2022"
+updatedDate: "November 20 2022"
+heroImage: "/placeholder-hero.jpg"
 ---
 
 Hello and this is my first post!

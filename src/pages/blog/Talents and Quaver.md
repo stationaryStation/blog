@@ -4,6 +4,7 @@ title: "Talents and Quaver"
 description: "Station talks about being good at clicking circles"
 pubDate: "May 5 2022"
 updatedDate: "November 18 2022"
+heroImage: "/placeholder-hero.jpg"
 ---
 
 Hello Again, in this post I will discuss what I am going to do for my school's talent show and my current status as a quaver player.

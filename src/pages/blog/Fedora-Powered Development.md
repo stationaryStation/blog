@@ -3,6 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Fedora-Powered Development"
 pubDate: "May 30 2022"
 updatedDate: "November 18 2022"
+heroImage: "/placeholder-hero.jpg"
 ---
 
 If you didn't knew already, I used arch btw.

@@ -4,6 +4,7 @@ title: "First Place on a Interscholar sports competition"
 description: "Station talks about how he somehow won on a sports cometition"
 pubDate: "April 29 2022"
 updatedDate: "November 18 2022"
+heroImage: "/placeholder-hero.jpg"
 ---
 
 So today I was on a sports competition and got first place on my category, which was amazing, because I wasn't prepared because another student was going to participate but got his wrist hurt and couldn't participate, so the teachers decided that it was fine to replace that student with me.
