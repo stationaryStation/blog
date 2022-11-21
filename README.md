@@ -1,4 +1,4 @@
-# Astro Starter Kit: Blog
+# Station//Blog (Built with the Astro Starter Kit: Blog)
 
 ```
 npm create astro@latest -- --template blog
