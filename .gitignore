@@ -5,7 +5,7 @@ dist/
 node_modules/
 
 # Ignore .obsidian directory
-src/pages/blog/.obsidian
+.obsidian/
 
 # logs
 npm-debug.log*
