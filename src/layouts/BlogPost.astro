@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+
 export interface Props {
 	content: {
 		title: string;
@@ -10,11 +11,12 @@ export interface Props {
 		pubDate?: string;
 		updatedDate?: string;
 		heroImage?: string;
+    id: number;
 	};
 }
 
 const {
-	content: { title, description, pubDate, updatedDate, heroImage },
+	content: { title, description, pubDate, updatedDate, heroImage, id},
 } = Astro.props;
 ---
 
@@ -31,6 +33,7 @@ const {
 				margin: 1rem 0;
 			}
 		</style>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"/>
 	</head>
 
 	<body>
@@ -50,6 +53,7 @@ const {
 				<hr />
 				<slot />
 			</article>
+      <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="0d7c2fd5-a461-4656-bb80-707e13b99e14" data-page-id={id} data-page-url={import.meta.env.SITE} data-page-title={title} data-theme="dark"></div>
 		</main>
 		<Footer />
 	</body>

@@ -4,6 +4,7 @@ title: "Writting Blogs with Obsidian"
 description: "Station talks about writting blog posts with obsidian"
 pubDate: "November 20 2022"
 heroImage: "/placeholder-hero.jpg"
+id: 6
 ---
 
 Writting blogs using neovim is certainly cool and most importantly really efficient

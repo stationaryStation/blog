@@ -4,6 +4,7 @@ title: "Modding Team Fortress 2: Making custom weapon textures"
 description: "Station talks about making custom weapon textures for the popular team-based shooter Team Fortress 2"
 pubDate: "November 22 2022"
 heroImage: "/placeholder-hero.jpg"
+id: 7
 ---
 
 Have you ever dreamed of customizing your weapons to look cool and unique? or maybe you wanted to have a certain warpaint but you don't have the money to afford it?

@@ -5,6 +5,7 @@ description: "Station talks about the new blog and why he choosed astro"
 pubDate: "November 18 2022"
 updatedDate: "November 20 2022"
 heroImage: "/placeholder-hero.jpg"
+id: 5
 ---
 
 Hello and this is my first post!
