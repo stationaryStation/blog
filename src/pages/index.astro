@@ -14,7 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		<Header title={SITE_TITLE} />
 		<main>
       <img width={720} height={360} src={"/placeholder-social.jpg"} alt="" />
-			<h1>Hey! Welcome to my <span class="very_cool_animation">blog</span> :D</h1>
+			<h1>Hey! Welcome to my <span id="grad_title" class="very_cool_animation">blog</span> :D</h1>
 			<p>
 			  Welcome to my personal blog where I talk about stuff. I really can't tell you exactly what
         I will talk about on this website but it's going to be mostly development related stuff and
@@ -26,6 +26,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		</main>
 		<Footer />
 	</body>
+  <script>
+    const d = new Date();
+    const day = d.getDate();
+    const month = d.getMonth();
+    if (day === 1 && month === 4) {
+      const div = document.getElementById("grad_title");
+      div.style.background = "url('https://s.yimg.com/os/creatr-uploaded-images/2021-02/572c4830-721d-11eb-bb63-96959c3b62f2')"
+    }
+
+    console.log("Current Day:", day);
+    console.log("Current Month:", month);
+
+  </script>
   <style>
     @keyframes scroll_gradient {
       to {
