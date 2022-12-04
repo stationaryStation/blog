@@ -3,25 +3,24 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,900&display=swap");
 
 body {
-	font-family: "Inter", sans-serif;
-	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
-	text-align: left;
-	background-color: #000;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: #eee;
+  font-family: "Inter", sans-serif;
+  margin: auto;
+  padding: 20px;
+  max-width: 65ch;
+  text-align: left;
+  background-color: #000;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: #eee;
 }
 
 h1,
 h2,
-h3
-{
+h3 {
   font-family: "Archivo", sans-serif;
 }
 
@@ -33,50 +32,50 @@ h5,
 h6,
 strong,
 b {
-	color: #fff;
+  color: #fff;
 }
 a {
-	color: #3275df;
+  color: #3275df;
 }
 nav a {
   color: #fff;
-	margin-right: 10px;
+  margin-right: 10px;
   border-radius: 3px;
   padding: 10px;
   background-color: #555;
 }
 textarea {
-	width: 100%;
-	font-size: 16px;
+  width: 100%;
+  font-size: 16px;
 }
 input {
-	font-size: 16px;
+  font-size: 16px;
 }
 content {
-	line-height: 1.6;
+  line-height: 1.6;
 }
 table {
-	width: 100%;
+  width: 100%;
 }
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 code {
-	padding: 2px 5px;
-	background-color: #24273a;
+  padding: 2px 5px;
+  background-color: #24273a;
   color: #cad3f5;
 }
 pre {
-	padding: 1rem;
+  padding: 1rem;
 }
 pre > code {
-	all: unset;
+  all: unset;
 }
 blockquote {
-	border: 1px solid #999;
-	color: #222;
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
-	font-style: italic;
+  border: 1px solid #ccc;
+  color: #fff;
+  padding: 2px 0px 2px 20px;
+  margin: 0px;
+  font-style: italic;
 }
