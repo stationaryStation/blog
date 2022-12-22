@@ -6,5 +6,6 @@ export const get = () =>
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
 		site: import.meta.env.SITE,
-		items: import.meta.glob('./blog/**/*.{md,mdx}'),
+		// Don't include drafts please thank u
+		items: import.meta.glob('./blog/**/*.{md,mdx}').filter((post) => !post.frontmatter.draft),
 	});
