@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Lazily bored"
 description: "I like to procrastinate and overcomplicate things"
-pubDate: "22 November 2022"
+pubDate: "22 December 2022"
 id: 10
 ---
 
