@@ -2,7 +2,7 @@ import rss from '@astrojs/rss';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 import sanitizeHtml from 'sanitize-html';
 
-const postImportResult = import.meta.glob('./blog/**/*.md', { eager: true }).filter((post) => !post.frontmatter.draft);
+const postImportResult = import.meta.glob('./blog/*.md', { eager: true }).filter((post) => !post.frontmatter.draft);
 const posts = Object.values(postImportResult);
 
 export const get = () =>
