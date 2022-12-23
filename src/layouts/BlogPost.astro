@@ -1,8 +1,7 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 export interface Props {
 	content: {
@@ -11,12 +10,12 @@ export interface Props {
 		pubDate?: string;
 		updatedDate?: string;
 		heroImage?: string;
-    id: number;
+		id: number;
 	};
 }
 
 const {
-	content: { title, description, pubDate, updatedDate, heroImage, id},
+	content: { title, description, pubDate, updatedDate, heroImage, id },
 } = Astro.props;
 ---
 
@@ -33,14 +32,34 @@ const {
 				margin: 1rem 0;
 			}
 		</style>
-    <script async defer src="https://cusdis.com/js/cusdis.es.js"/>
+		<script
+			src="https://giscus.app/client.js"
+			data-repo="stationarystation/blog"
+			data-repo-id="R_kgDOId3yXA"
+			data-category="Comments"
+			data-category-id="DIC_kwDOId3yXM4CTOQs"
+			data-mapping="title"
+			data-strict="1"
+			data-reactions-enabled="1"
+			data-emit-metadata="0"
+			data-input-position="top"
+			data-theme="transparent_dark"
+			data-lang="en"
+			data-loading="lazy"
+			crossorigin="anonymous"
+			async
+		></script>
 	</head>
 
 	<body>
 		<Header />
 		<main>
 			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+				{
+					heroImage && (
+						<img width={720} height={360} src={heroImage} alt="" />
+					)
+				}
 				<h1 class="title">{title}</h1>
 				{pubDate && <time>{pubDate}</time>}
 				{
@@ -53,7 +72,9 @@ const {
 				<hr />
 				<slot />
 			</article>
-      <div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="0d7c2fd5-a461-4656-bb80-707e13b99e14" data-page-id={id} data-page-url={import.meta.env.SITE} data-page-title={title} data-theme="dark"></div>
+			<hr/>
+			<h1> The Comment Section</h1>
+			<div class="giscus" />	
 		</main>
 		<Footer />
 	</body>
