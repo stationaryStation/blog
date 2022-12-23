@@ -1,0 +1,13 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /blog/
+
+User-agent: Googlebot
+Disallow: /*.png$
+
+User-agent: Googlebot
+Disallow: /*.jpg$
+
+Sitemap: https://blog.stationarystation.vercel.app/rss.xml
