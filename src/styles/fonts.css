@@ -1,0 +1,35 @@
+/* fonts.css - Fonts used in Poketube.fun
+    Under GPL 3.0:
+ 
+    This Source Code Form is subject to the terms of the GNU General Public License:
+
+    Copyright (C) 2021-202x POKETUBE (https://github.com/iamashley0/poketube)
+    
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see https://www.gnu.org/licenses/. 
+*/
+
+@font-face {
+    font-family: "PokeTube Flex";
+    src: url("https://p.poketube.fun/https://cdn.glitch.global/43b6691a-c8db-41d4-921c-8cf6aa0d9108/robotoflex.ttf?v=1668343428681");
+    font-style: normal;
+    font-stretch: 1% 800%;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  src: url(https://p.poketube.fun/https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}

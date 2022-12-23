@@ -1,0 +1,39 @@
+Because I don't have a robots.txt yet, here is a humans.txt to give thanks
+to those I love!
+
+ _____ _        _   _                 _________ _             
+/  ___| |      | | (_)               / / / ___ \ |            
+\ `--.| |_ __ _| |_ _  ___  _ __    / / /| |_/ / | ___   __ _ 
+ `--. \ __/ _` | __| |/ _ \| '_ \  / / / | ___ \ |/ _ \ / _` |
+/\__/ / || (_| | |_| | (_) | | | |/ / /  | |_/ / | (_) | (_| |
+\____/ \__\__,_|\__|_|\___/|_| |_/_/_/   \____/|_|\___/ \__, |
+                                                         __/ |
+                                                        |___/  2022-20xx
+
+Huge thanks to:
+
+- Ashley
+- Lea
+- Error 404: Null not found
+- Vale (Valence)
+- Rexogamer
+
+Special Thanks to:
+
+- VeiledProduct80
+- Insert
+- Lokicalmito (lo-kiss)
+- DoruDoLasu
+- ShortCake (SingleSlice)
+- Geshi (Lilly)
+- You :)
+
+I am trying to get a paypal up with my mom so I can set up github
+sponsorships/ko-fi so you can donate to me for no reason at all.
+
+Maybe one day I could host this website without Vercel and all
+of those things.
+
+Thank you :D
+
+- Station, 2022

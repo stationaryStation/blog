@@ -26,10 +26,10 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).filter((post) => !post.fro
 			ul li time {
 				flex: 0 0 130px;
 				font-style: italic;
-				color: #ddd;
+				color: var(--foreground);
 			}
 			ul li a:visited {
-				color: #366faa;
+				color: var(--accent);
 			}
 		</style>
 	</head>

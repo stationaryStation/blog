@@ -3,46 +3,73 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,900&display=swap");
+
+ @import './fonts.css';
+
+:root {
+  /* Cool Variables to switch colours arround quickly */
+  --accent: #3584e4;
+  --background: #242424;
+  --foreground: #fff;
+  --codeblock-background: #24273a;
+  --codeblock-foreground: #cad3f5;
+  --quote-background: #383838;
+  --quote-foreground: var(--foreground);
+  --button-background: #292929;
+  --button-actv-background: #454545;
+  --button-actv-foreground: var(--foreground);
+  --button-foreground: var(--foreground);
+  --not-important: #8a8a8a;
+  --header-font: "Poketube Flex";
+  --body-font: "Roboto";
+  --body-foreground: #eee;
+  --separator-colour: #ddd;
+}
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--body-font), sans-serif;
   margin: auto;
   padding: 20px;
   max-width: 65ch;
   text-align: left;
-  background-color: #000;
+  background-color: var(--background);
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: #eee;
+  color: var(--body-foreground);
+  font-weight: 500;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Archivo", sans-serif;
+  font-family: var(--header-font), sans-serif;
+  font-stretch: extra-expanded;
+  font-weight: 1000;
 }
 
 h1,
+strong,
+b {
+  color: var(--foreground);
+}
 h2,
 h3,
 h4,
 h5,
-h6,
-strong,
-b {
-  color: #fff;
+h6 {
+  font-weight: bold;
+  color: var(--not-important);
 }
 a {
-  color: #3275df;
+  color: var(--accent);
 }
 nav a {
-  color: #fff;
+  color: var(--button-foreground);
   margin-right: 10px;
   border-radius: 3px;
   padding: 10px;
-  background-color: #555;
+  background-color: var(--button-background);
 }
 textarea {
   width: 100%;
@@ -63,8 +90,8 @@ img {
 }
 code {
   padding: 2px 5px;
-  background-color: #24273a;
-  color: #cad3f5;
+  background-color: var(--codeblock-background);
+  color: var(--codeblock-foreground);
 }
 pre {
   padding: 1rem;
@@ -73,9 +100,27 @@ pre > code {
   all: unset;
 }
 blockquote {
-  border: 1px solid #ccc;
-  color: #fff;
+  background-color: var(--quote-background);
+  color: var(--quote-foreground);
   padding: 2px 0px 2px 20px;
   margin: 0px;
   font-style: italic;
+  border-radius: 8px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --body-foreground: var(--foreground);
+  --separator-colour: #ebebeb;
+  --button-background: #ebebeb;
+  --button-actv-background: var(--accent);
+  --button-actv-foreground: var(--background);
+  --accent: #3584e4;
+  --background: #ffffff;
+  --foreground: #333333;
+  --codeblock-background: #f3eddb;
+  --codeblock-foreground: #849395;
+  --quote-background: #ebebeb;
+  --not-important: #919191;
+  }
 }
