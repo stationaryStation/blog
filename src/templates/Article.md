@@ -1,8 +1,8 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: ""
+title: "{{title}}"
 description: ""
-pubDate: "{{date}}"
+pubDate: "{{date:MMMM DD YYYY}}"
 ---
 
 #
