@@ -4,6 +4,7 @@ title: "Lazily bored"
 description: "I like to procrastinate and overcomplicate things"
 pubDate: "22 December 2022"
 id: 10
+draft: true
 ---
 
 > # TL;DR

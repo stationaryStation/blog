@@ -6,6 +6,7 @@ pubDate: "November 18 2022"
 updatedDate: "November 20 2022"
 heroImage: "/placeholder-hero.jpg"
 id: 5
+draft: true
 ---
 
 Hello and this is my first post!
