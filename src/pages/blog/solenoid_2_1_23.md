@@ -2,7 +2,7 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Solenoid Development: January 1-6"
 description: "SOMEBODY TOUCHED MY SPAGHETTI (code)"
-pubDate: "January 02 2023"
+pubDate: "January 07 2023"
 ---
 
 I am back at developing solenoid, this time with a (not so) new approach at changing things, by using a UI framework to avoid CSS entirely and making my code easier to read :D
