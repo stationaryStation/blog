@@ -5,7 +5,6 @@ description: "Station vents about issues with motivation"
 pubDate: "December 15 2022"
 heroImage: "/placeholder-hero.jpg"
 id: 9
-draft: true
 ---
 
 

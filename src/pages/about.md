@@ -4,7 +4,6 @@ title: "About Me and this site"
 description: "A brief description about who am I and what I do"
 pubDate: "November 18 2022"
 updatedDate: "December 22 2022"
-draft: true
 ---
 
 # Heya! I am Station
