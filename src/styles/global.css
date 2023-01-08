@@ -24,6 +24,7 @@
   --body-font: "Roboto";
   --body-foreground: #eee;
   --separator-colour: #ddd;
+  --color-text-primary: #000;
 }
 
 body {

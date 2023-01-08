@@ -3,7 +3,6 @@ layout: "../../layouts/BlogPost.astro"
 title: "Solenoid Development: January 1-6"
 description: "SOMEBODY TOUCHED MY SPAGHETTI (code)"
 pubDate: "January 02 2023"
-draft: true
 ---
 
 I am back at developing solenoid, this time with a (not so) new approach at changing things, by using a UI framework to avoid CSS entirely and making my code easier to read :D
@@ -12,7 +11,7 @@ Also, I kinda wanted to stop doing all of these vent posts here for now, as thin
 
 # Sun, 1 Jan
 
-## Backend I
+## Backend Improvements
 
 A lot of code has been refactored, since mostly everything was on a single file because of a stupid design decision I made a long time ago (Since beginning Solenoid).
 
@@ -31,7 +30,11 @@ But it still looks odd and out of place.
 
 ### New message look
 
-Messages now look a lot more like a regular chat application now, thanks to DaisyUI
+Messages now look a lot more like a regular chat application now and should have a better experience overall!
+
+![](</Screenshot from 2023-01-07 21-38-08.png>)
+
+Although replies, reactions, deletes and edits aren't implemented and will come later down the line.
 
 ### Markdown
 
@@ -40,6 +43,8 @@ Markdown is a pain in the ass to work with, and I have been relying upon a NPM p
 But recently, Insert ported the markdown renderer from Revite to the [new Solid Client](https://github.com/revoltchat/revoltchat-solid-client-monorepo/commit/4363e2ae0eb46ef4f3205a4a06cd6de6d809d8c1)! Allowing me to shamelessly copy over the code from this repo and have absolutely no problems at all.
 
 This means that I have support for code blocks, spoilers, inline code blocks now work!
+
+![](/Markdown.png)
 
 ## Deprecated Settings
 
@@ -58,7 +63,9 @@ The following experiments have been deprecated:
 
 Embeds now render for websites that support open graph!
 
-It relies on January, Revolt's proxy server, for processing the websites.
+![](</Screenshot from 2023-01-07 21-39-15.png>)
+
+It relies on January, Revolt's proxy server, for processing the websites, so some websites may look broken and/or won't have links to them.
 
 # Mon, 2 Jan
 
@@ -74,13 +81,20 @@ A sidebar has replaced the channel list, allowing for a cleaner look.
 
 Server banners won't be displayed due to some limitations.
 
+![](</Screenshot from 2023-01-07 21-39-34.png>)
+
 ### Messages
 
 Embeds now have a tiny border that changes colour according to the webpage.
 
 Added text embed support
 
+![](</Screenshot from 2023-01-07 21-39-58.png>)
+
 Message authors with masquerades now show up alongside masquerade name to avoid confusion
+
+![](</Screenshot from 2023-01-07 21-40-16.png>)
+
 
 ## Bug fixes
 
@@ -94,6 +108,8 @@ The settings panel was rightfully detached from the main file and now lives in a
 
 Also, some imports from other files, including the main file, have been organized completely, and unused imports has been removed.
 
+![](</Screenshot from 2023-01-07 21-37-30.png>)
+
 ## UI Improvements
 
 ### Settings
@@ -101,6 +117,8 @@ Also, some imports from other files, including the main file, have been organize
 The settings panel now has a new look and feel, looking more modern than ever, plus, it's now full screen to look a little like revolt.
 
 Some experiments have been removed entirely because they are no longer functional or just disabled for now until they can be implemented again.
+
+![](</Screenshot from 2023-01-07 21-49-31.png>)
 
 ### Messages
 
@@ -126,8 +144,14 @@ These use the ones provided by revolt.chat, so it's a bit limited.
 The list of available emoji packs are:
 
 - Mutant Remix
+
+![](</Screenshot from 2023-01-07 21-51-33.png>)
 - Fluent 3D Emoji
+
+![](</Screenshot from 2023-01-07 21-51-06.png>)
 - Twemoji
+
+![](</Screenshot from 2023-01-07 21-51-20.png>)
 
 ## Bug fixes
 
@@ -165,6 +189,8 @@ Replies have been reimplemented into the message component and have a new look. 
 
 Image embeds now look a lot nicer, it still needs more polish though.
 
+![](</Screenshot from 2023-01-07 21-53-26.png>)
+
 ### Message box
 
 The message box should be a bit more responsive to changing heights
@@ -174,6 +200,8 @@ The message box should be a bit more responsive to changing heights
 ### Typing Indicator
 
 Solenoid now has a fully functional typing indicator!
+
+![](</Screenshot from 2023-01-07 21-55-09.png>)
 
 It allows you to see who is currently typing in a channel alongside its profile picture.
 
@@ -203,7 +231,7 @@ Sidebars make the portrait mobile experience unenjoyable and frustrating, as mes
 
 ## Pull requests
 
-Accepted [#56](https://github.com/Revolt-Unofficial-Clients/Solenoid/pull/56) from @Valenplayer3000 (Bloom) on GitHub: "feat: New login design"
+Accepted [#56](https://github.com/Revolt-Unofficial-Clients/Solenoid/pull/56) from @Valenplayer3000 (Bloom) on GitHub: “feat: New login design”
 
 ## UI improvements
 
@@ -211,11 +239,13 @@ Accepted [#56](https://github.com/Revolt-Unofficial-Clients/Solenoid/pull/56) fr
 
 The login UI has changed since the initial solenoid release!
 
+![](</Screenshot from 2023-01-07 21-40-41.png>)
+
 Thanks to @Bloom on revolt.chat, the login looks a bit similar to Revolt's, basically making the experience a bit more delightful and clean.
 
 Also, the login page is fully responsive, so it should fit on bigger and smaller devices!
 
-The background image used on the login page is from Sebastian Svenson in Unsplash! Be sure to check their work!
+The background image used on the login page is from [Sebastian Svenson on Unsplash!](https://unsplash.com/@sebastiansvenson) Be sure to check their work!
 
 ## Bug fixes
 
@@ -230,4 +260,11 @@ Border colours are now correct for embeds
 ## Pull requests 
 
 Requested change in [#57](https://github.com/Revolt-Unofficial-Clients/Solenoid/pull/57) by @Valenplayer3000 (Bloom) on GitHub: “fix: 'Login with token' button overflowed with login container”
+
+# Final Thoughts
+
+This week was a really productive one at best, but I could still use more time to develop this beloved project of mine. But sadly, I don't have the time (nor the required motivation) to continue it long-term.
+
+The codebase is too large for me to handle by myself, and I often need help with stuff that's way out of my knowledge.
+
 
